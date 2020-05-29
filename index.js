@@ -22,13 +22,13 @@ bot.on('ready', () => {
  */
 const gifKeywords = ['i wanna', "i'm", 'i am', 'i want', 'send'];
 
-bot.on('message', (message) => {
+bot.on('message', message => {
   let { content } = message;
   content = content.toLowerCase();
 
   if (content.charAt(0) == '!') {
     commands(message, content);
-  } else if (gifKeywords.some((keyword) => content.includes(keyword)))
+  } else if (gifKeywords.some(keyword => content.includes(keyword)))
     sendGif(content, message);
 });
 
