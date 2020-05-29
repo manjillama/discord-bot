@@ -6,6 +6,30 @@
 
 </div>
 
+## Getting Started
+
+```bash
+$ npm install
+```
+
+```bash
+$ npm run dev
+```
+
+## Formatting
+
+Check for formatting errors.
+
+```bash
+$ npm run format:check
+```
+
+Fix formatting errors.
+
+```bash
+$ npm run format
+```
+
 ## Set environment variables
 
 You can create a .env file in your root project folder and add theses configurations. Be sure to modify the values beforehand. **_Never commit .env file to github._**.
@@ -21,6 +45,8 @@ UNSPLASH_API_KEY =
 OPEN_WEATHER_KEY =
 
 ```
+
+## Features
 
 | Commands              | Actions                                       |
 | --------------------- | --------------------------------------------- |
