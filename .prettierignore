@@ -1,0 +1,14 @@
+coverage
+.vscode
+.github
+
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# misc
+.DS_Store
+CHANGELOG.md
+package.json
