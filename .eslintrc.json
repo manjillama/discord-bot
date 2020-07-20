@@ -4,6 +4,8 @@
   "parser": "babel-eslint",
   "rules": {
     "prettier/prettier": "error",
-    "no-process-exit": "off"
+    "no-process-exit": "off",
+    "no-undef": "off",
+    "node/no-unpublished-require": "off"
   }
 }

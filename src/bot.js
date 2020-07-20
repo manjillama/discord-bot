@@ -1,13 +1,12 @@
-require('dotenv').config();
-const http = require('http');
-const Discord = require('discord.js');
 const commands = require('./commands');
 const sendGif = require('./services/gifService');
-const bot = new Discord.Client();
-const BOT_TOKEN = process.env.BOT_TOKEN;
+const { bot, connectBot } = require('./services/botService');
+
 /*
  * Establish connection
  */
+connectBot();
+
 bot.on('ready', () => {
   console.log(`Logged in as ${bot.user.tag}!`);
 });
@@ -31,21 +30,3 @@ bot.on('message', message => {
   } else if (gifKeywords.some(keyword => content.includes(keyword)))
     sendGif(content, message);
 });
-
-/*
- * Login bot using token
- */
-bot.login(BOT_TOKEN).catch(() => {
-  console.log('-------------------------------------');
-  console.log('Invalid discord bot token provided!!!');
-  console.log('-------------------------------------');
-  process.exit(1);
-});
-
-http
-  .createServer(function (req, res) {
-    res.writeHead(200, { 'Content-Type': 'text/plain' });
-    res.write("You're not supposed to be here dwag!");
-    res.end();
-  })
-  .listen(process.env.PORT || 5000);
