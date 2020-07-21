@@ -9,7 +9,7 @@
     "lint": "eslint src",
     "format": "prettier --write . '**/*.{js,md,yaml,json}'",
     "format:check": "prettier --check . '**/*.{js,md,yaml,json}'",
-    "test": "jest --forceExit"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
