@@ -2,7 +2,10 @@
 
 > A simple discord bot for your discord server
 
+[![](https://github.com/manjillama/discord-bot/workflows/CI/badge.svg)](https://github.com/manjillama/discord-bot/actions)
 [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+
+
 
 </div>
 
